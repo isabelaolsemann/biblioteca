@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-main-bg);
+}
+
+:root {
+    --color-main-bg: #fefefe;       
+    --color-sec-bg: #053578; 
+    --color-ter-bg: #DDEFFE; 
+    --color-gray-bg:#f5f5f5;
+    --color-icons: #042757;
+    --color-accent: #FFDDA4; /* ou #FA6437*/
+    --color-text-primary: #080808; 
+    --color-text-white: #fff;
+    --color-text-gray:#817f7f;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 0.875rem; 
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem; 
+    font-weight: 600;
+}
+
+.container {
+    width: 94%;       
+    max-width: 75rem; 
+    margin: 0 auto;
+    padding: 0 1rem; 
+}
+
+/*-----Header-----*/
+.information {
+    background-color: var(--color-gray-bg);
+}
+
+.information ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 0.5rem;
+    padding: 4px;
+
+}
+
+.information a:hover {
+    font-weight: bold;
+}
+
+header {
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.2); 
+    transition: transform 0.1s, box-shadow 0.3s; 
+}
+
+header h6 {
+    font-size: 1.8rem;
+    color: var(--color-icons);
+    font-weight: bolder;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.new-profile {
+    align-items: center;
+}
+
+header nav{
+    padding: 16px 0;
+}
+
+form input {
+    padding: 6px;
+    min-width: 26rem;
+    border: 1px solid var(--color-text-gray);
+}
+
+form ::placeholder{
+    color: var(--color-text-gray);
+    font-weight: 500;
+}
+
+form button {
+    font-size: 0.857rem;
+    padding: 6px;
+    background-color: var(--color-sec-bg);
+    border: none;
+}
+
+form button i {
+    font-size: 0.857rem;
+    color: var(--color-text-white);
+}
+
+form button:hover {
+    background-color: var(--color-ter-bg);
+}
+
+form button i:hover {
+    color: var(--color-icons);
+}
+
+header .btn-create {
+    background-color: var(--color-icons);
+    color: var(--color-text-white);
+    padding: 4px 8px;
+    margin: 4px;
+}
+
+header .btn-create:hover {
+    background-color: var(--color-ter-bg);
+    color: var(--color-icons);
+    font-weight: bold;
+}
+
+header .btn-account span {
+    color: var(--color-icons);
+    font-weight: 900;
+}
+
+header .btn-account span:hover {
+    text-decoration: underline !important; 
+}
+
+/*-----Footer-----*/
+footer {
+    background-color: var(--color-icons);
+    color: var(--color-text-white);
+    padding: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.about-love-story h6 {
+    font-size: 1.2rem;
+}
+
+.about-love-story p {
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: 70%;
+    padding: 6px 0;
+}
+
+footer .flex-column a {
+    display: flex;
+    align-items: start;
+    text-align: start;
+    gap: 0.5rem; 
+}
+
+footer a {
+    font-size: 0.85rem;
+    padding: 2px 0;
+}
+
+footer a:hover {
+    text-decoration-line: underline;     
+    text-decoration-thickness: 2px;      
+    text-underline-offset: 4px; 
+}
+
+footer .flex-column i {
+    font-size: 1rem;
+}
+
+.dev {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+footer p span{
+    font-weight: 700;
+    padding-left: 4px;
+}

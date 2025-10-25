@@ -1,0 +1,58 @@
+/*--------------- Contato -------------*/
+.contato-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2.625rem 0 3.25rem 0; 
+    align-items: center;
+}
+
+.containers-contact form div {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0; 
+}
+
+.containers-contact form {
+    width: 40%;
+}
+
+.containers-contact form label {
+    font-size: 1rem; 
+    font-weight: 600;
+}
+
+.containers-contact form input,
+.containers-contact form textarea {
+    font-size: 0.875rem; 
+    width: 100%;
+    padding: 0.5rem; 
+    background-color: #f6f5f4;
+    border: 0.125rem solid #ccccccb0; 
+}
+
+.containers-contact form textarea {
+    resize: none;
+}
+
+.containers-contact form button {
+    padding: 0.625rem;
+    background-color: var(--color-sec-bg);
+    color: var(--color-text-white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.containers-contact form button:hover {
+    background-color: var(--color-sec-bg);
+}
+
+.maps {
+    width: 50%;
+}
+
+.maps h3 {
+    font-size: 1rem; 
+    font-weight: 600;
+}

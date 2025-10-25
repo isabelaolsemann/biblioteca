@@ -1,0 +1,64 @@
+/*--Menu Lateral--*/
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 2.5rem 0;
+}
+
+.menu-lateral {
+    width: 20%;
+}
+
+.menu-lateral li a {
+    display: block;
+    padding: 0.5rem 1rem; 
+    margin-bottom: 0.2rem; 
+    font-size: 0.9rem;
+}
+
+.menu-lateral a.active {
+    font-weight: bold;
+    background-color: var(--color-ter-bg); 
+}
+
+/*--- Livros ----*/
+.livros-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.1); 
+    transition: transform 0.1s, box-shadow 0.3s;
+}
+
+.book-container img {
+    max-width: 170px;
+    padding-right: 1rem;
+}
+
+.book-container h4{
+    padding: 4px 0;
+}
+
+.book-container p {
+    margin: 20px 0;
+}
+
+.btn-buy {
+    display: inline-block; 
+    background-color: var(--color-ter-bg);
+    color: var(--color-sec-bg);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 8px; 
+}
+
+
